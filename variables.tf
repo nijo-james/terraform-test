@@ -49,3 +49,7 @@ variable "dbintancetype" {
 variable "s3-bucket" {
   default = "terraform-s3-nijo-test"
 }
+
+variable "s3-bucket-object" {
+  default = "/home/nijo/Documents/mydocs/terraform/index.html"
+}

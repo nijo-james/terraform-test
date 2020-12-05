@@ -354,7 +354,7 @@ resource "aws_s3_bucket_object" "object" {
   bucket = var.s3-bucket
   key = "index.html"
   content_type = "text/html"
-  source = "/home/nijo/Documents/mydocs/terraform/index.html"
+  source = var.s3-bucket-object
   depends_on = [aws_s3_bucket.terraform-s3]
 }
 
